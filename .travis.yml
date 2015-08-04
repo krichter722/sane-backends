@@ -1,0 +1,4 @@
+language: c
+before_script:
+ - sudo apt-get build-dep sane-utils
+script: ./configure && make -j24 && make -j24 check && make -j24 distcheck && sudo make install
